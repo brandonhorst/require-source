@@ -16,8 +16,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha":">=0.12.1",
-    "should":">=0.5.1"
+    "mocha": ">=2.2.5",
+    "should": ">=7.0.4"
   },
   "optionalDependencies": {}
 }

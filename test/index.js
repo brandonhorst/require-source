@@ -44,11 +44,11 @@ describe('when a function enclosing a module code is given', function() {
 		module.exports = function(obj) {
 			return util.inspect(obj);
 		}
-	} 
+	}
 
 	it('it should be executed properly and set the exports object', function() {
 		var inspectModule = requireSource('inspectModule', moduleCode);
-		inspectModule.should.be.a('function');
+		inspectModule.should.be.a.Function();
 		inspectModule(function() {}).should.equal('[Function]');
 
 		requireSource('inspectModule').should.equal(inspectModule);
